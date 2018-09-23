@@ -23,6 +23,7 @@ class AllBreeds extends React.Component {
                 <div key={breed.id}>
                     <img onClick={this.handleOnClick.bind(this)} id={breed.id} src={breed.img_url}/>
                     {breed.id == this.state.clickedId ? <Interaction breed={breed}/> : null}
+                    <br/>
                 </div>
             )
         })
@@ -35,32 +36,3 @@ class AllBreeds extends React.Component {
     }
 
 }
-
-
-// const AllBreeds = (props) => {
-//
-//     let handleOnClick = (event) => {
-//         alert(event.target.id)
-//         // fetch('/api/v1/comments.json')
-//         //     .then((response) => {
-//         //         return response.json()
-//         //     })
-//         //     .then((data) => {
-//         //         this.setState({comments: data})
-//         //     });
-//     }
-//
-//     let breeds = props.breeds.map((breed) => {
-//         return (
-//             <div>
-//                 <img onClick={handleOnClick.bind(this)} key={breed.id} id={breed.id} src={breed.img_url}/>
-//                 {breed.id === <Comment id={breed.id}/>}
-//             </div>
-//         )
-//     })
-//     return (
-//         <div>
-//             {breeds}
-//         </div>
-//     )
-// }

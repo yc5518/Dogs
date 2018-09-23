@@ -4,7 +4,6 @@ class Body extends React.Component {
         super(props);
         this.state = {
             breeds: [],
-            showDialog: false
         };
     }
     componentDidMount(){
@@ -16,7 +15,6 @@ class Body extends React.Component {
     render(){
         return(
             <div>
-                {this.state.showDialog?<div>aaaaa</div>:null}
                 <AllBreeds breeds={this.state.breeds} />
             </div>
         )

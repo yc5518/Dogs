@@ -3,6 +3,13 @@ class Api::V1::BreedsController < ApplicationController
     render json: Breed.all
   end
 
+  def update
+    breed = Breed.find(params[:id])
+    breed.update_attributes(breed_params)
+    render json: breed
+  end
+
+
   private
 
   def breed_params

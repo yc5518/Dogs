@@ -9,7 +9,6 @@ class Comment extends React.Component {
     }
 
     componentDidMount() {
-        alert('/api/v1/comments/' + this.props.id)
         fetch('/api/v1/comments/' + this.props.id)
             .then((response) => {
                 return response.json()
@@ -29,8 +28,8 @@ class Comment extends React.Component {
         let items = this.state.comments.map((item) => {
             return (
                 <div key={item.id}>
-                    <strong>{item.creator}:</strong>
-                    <p>{item.content}</p>
+                    <p><strong>{item.creator}</strong>{item.reply_to === null ? " : " :
+                        <div><i> reply to: </i><strong>{item.reply_to}</strong></div>}{item.content}</p>
                 </div>
             )
 
@@ -39,7 +38,7 @@ class Comment extends React.Component {
         return (
             <div>
                 {items}
-                <input/>
+                <NewComment/>
             </div>
 
         )
