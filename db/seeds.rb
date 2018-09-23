@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+breeds = ['Beagle', 'Border Collie', 'Chihuahua', 'French Bulldog', 'Husky', 'Labrador', 'Miniature Schnauzer', 'Pug', 'Samoyed', 'Shiba']
+breeds.each{|breed| Breed.create(name: breed, img_url:"/public/img/#{breed}/img.jpg", likes:0)}
