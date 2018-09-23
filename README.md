@@ -7,11 +7,17 @@ Things you may want to cover:
 
 * Ruby version
 
+** Ruby v2.5.1
+
 * System dependencies
+
+** react-rails gem
 
 * Configuration
 
 * Database creation
+
+** Postgresql
 
 * Database initialization
 
