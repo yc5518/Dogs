@@ -1,11 +1,14 @@
+
 class Body extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            breeds: []
+            breeds: [],
+            showDialog: false
         };
     }
     componentDidMount(){
+
         fetch('/api/v1/breeds.json')
             .then((response) => {return response.json()})
             .then((data) => {this.setState({ breeds: data }) });
@@ -13,6 +16,7 @@ class Body extends React.Component {
     render(){
         return(
             <div>
+                {this.state.showDialog?<div>aaaaa</div>:null}
                 <AllBreeds breeds={this.state.breeds} />
             </div>
         )
