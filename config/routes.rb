@@ -4,4 +4,5 @@ Rails.application.routes.draw do
       resources :breeds, only: [:index]
     end
   end
+  root to: 'home#index'
 end
