@@ -9,3 +9,6 @@
 
 breeds = ['Beagle', 'Border Collie', 'Chihuahua', 'French Bulldog', 'Husky', 'Labrador', 'Miniature Schnauzer', 'Pug', 'Samoyed', 'Shiba']
 breeds.each{|breed| Breed.create(name: breed, img_url:"/public/img/#{breed}/img.jpg", likes:0)}
+
+visitors = ['Visitor01','Visitor02', 'Visitor03', 'Visitor04', 'Visitor05'];
+visitors.each{|visitor| Comment.create(breed_id:1, content:"Beagle is friend of our human.", creator:visitor, reply_to:"#{visitor}1")}

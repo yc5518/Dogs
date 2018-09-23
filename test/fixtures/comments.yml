@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  breed_id: 1
+  content: MyText
+  creator: MyString
+  reply_to: MyString
+
+two:
+  breed_id: 1
+  content: MyText
+  creator: MyString
+  reply_to: MyString
