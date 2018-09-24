@@ -7,24 +7,13 @@ Things you may want to cover:
 
 * Ruby version
 
-## Ruby v2.5.1
-
-* System dependencies
-
-** react-rails gem
+   Ruby v2.5.1
 
 * Configuration
 
 * Database creation
-
-** Postgresql
+   Run `rake db:create` to create database.
 
 * Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  Run `rake db:migrate && rake db:seed`.
+  Run `rake db:drop` delete all database, and create again.
