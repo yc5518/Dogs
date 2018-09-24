@@ -1,6 +1,6 @@
 # README
 
-This demo applies react-rails gem to include react.js in a ROR service. Frontend service queries data from backend by using JS API calls.
+This demo applies [react-rails](https://github.com/react/react-rails) gem to include react.js in a ROR service. Frontend service queries data from backend by using JS API calls.
 
 Technology included:
 ● Ruby on Rails 5
