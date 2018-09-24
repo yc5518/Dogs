@@ -29,5 +29,20 @@ visitors.each{|visitor| Comment.create(breed_id:1, content:"Beagle is friend of 
 
 Comment.create(breed_id:2, content:"Border Collie is our friend.", creator:"visitor1")
 Comment.create(breed_id:2, content:"Border Collie is friend of our human.", creator:"visitor2", reply_to:"visitor1")
-Comment.create(breed_id:3, content:"Chihuahua Collie is friend of our human.", creator:"visitor4")
-Comment.create(breed_id:3, content:"Border Collie is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+Comment.create(breed_id:3, content:"Chihuahua is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:3, content:"Chihuahua is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+
+Comment.create(breed_id:4, content:"French Bulldog is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:4, content:"French Bulldog is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+
+Comment.create(breed_id:5, content:"Husky is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:5, content:"Husky is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+
+Comment.create(breed_id:6, content:"Labrador is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:6, content:"Labrador is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+
+Comment.create(breed_id:7, content:"Miniature Schnauzer is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:7, content:"Miniature Schnauzer is friend of our human.", creator:"visitor5", reply_to:"visitor4")
+
+Comment.create(breed_id:8, content:"Pug is friend of our human.", creator:"visitor4")
+Comment.create(breed_id:8, content:"Pug is friend of our human.", creator:"visitor5", reply_to:"visitor4")
