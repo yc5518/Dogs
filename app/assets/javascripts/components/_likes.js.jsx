@@ -11,7 +11,7 @@ class Like extends React.Component {
     handleOnClickLikes(){
         // let body = JSON.stringify({breed: {name: this.props.breed.name, img_url:this.props.breed.img_url, likes:this.props.breed.likes + 1} })
         // fetch('http://localhost:3000/api/v1/breeds', {
-        //     method: 'PUT',
+        //     method: 'PATCH',
         //     headers: {
         //         'Content-Type': 'application/json'
         //     },

@@ -24,12 +24,14 @@ class Comment extends React.Component {
 
 
     render() {
+        let result = this.state.comments;
 
-        let items = this.state.comments.map((item) => {
+        let items = result===null ? null : result.map((item) => {
             return (
                 <div key={item.id}>
-                    <p><strong>{item.creator}</strong>{item.reply_to === null ? " : " :
-                        <div><i> reply to: </i><strong>{item.reply_to}</strong></div>}{item.content}</p>
+                    <div><strong>{item.creator}</strong>{item.reply_to === null ? " : " :
+                        <div><i> reply to: </i><strong>{item.reply_to}</strong></div>}{item.content}</div>
+                    <br/>
                 </div>
             )
 

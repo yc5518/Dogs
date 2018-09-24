@@ -7,15 +7,16 @@ class NewComment extends React.Component{
 
     }
 
-    handleOnFoucus(){
-        return alert('Please login to comment!');
+    handleOnFoucus(event){
+        alert('Please login to comment!');
+        event.target.blur()
     }
 
     render(){
         return(
             <div>
-                <input onClick={this.handleOnFoucus}/>
-                <button >Submit</button>
+                <input onFocus={this.handleOnFoucus.bind(this)}/>
+                <button onClick={this.handleOnFoucus.bind(this)}>Submit</button>
             </div>
         )
     }

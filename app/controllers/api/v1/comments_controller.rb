@@ -5,7 +5,7 @@ class Api::V1::CommentsController < ApplicationController
 
   #todo: need to fix sql bug in selecting comments to an id-specific breed
   def show
-    render json: Comment.find_by_sql("select * from Comments where breed_id = #{:breed_id}")
+    render json: Comment.find_by_sql("select * from Comments where breed_id = #{(:breed_id)}")
   end
 
   def create

@@ -8,7 +8,7 @@ class Interaction extends React.Component {
         return (
             <div>
                 <Like breed={this.props.breed}/>
-                <h3>Comments:</h3>
+                <h4>Comments:</h4>
                 <Comment id={this.props.breed.id}/>
             </div>
         )
