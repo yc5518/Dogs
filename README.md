@@ -1,19 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This demo applies react-rails gem to include react.js in a ROR service. Frontend service queries data from backend by using JS API calls.
 
-Things you may want to cover:
+Technology included:
+● Ruby on Rails 5
+● Postgres
+● React.js
+● Webpack
+● It is divided into backend and frontend, both could work separately.
+● The frontend queries data from the backend using JS API calls.Technologies included:
 
-* Ruby version
-
-   Ruby v2.5.1
-
-* Configuration
-
-* Database creation
-   Run `rake db:create` to create database.
-
-* Database initialization
-  Run `rake db:migrate && rake db:seed`.
-  Run `rake db:drop` delete all database, and create again.
